@@ -40,4 +40,4 @@ out/
 .kotlin
 
 ### 추가내용 ###
-application-secret.properties
+application-secret.yaml
