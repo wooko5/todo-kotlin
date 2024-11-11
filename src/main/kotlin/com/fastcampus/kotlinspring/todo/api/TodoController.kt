@@ -22,5 +22,6 @@ class TodoController(
     @PostMapping
     fun create(@RequestBody request: TodoRequest) = ok(TodoResponse.of(todoService.create(request)))
 
-    
+    @PutMapping("/{id}")
+    fun update(@PathVariable id: Long, @RequestBody request: TodoRequest) = ok(TodoResponse.of(todoService.update(id, request)))
 }
